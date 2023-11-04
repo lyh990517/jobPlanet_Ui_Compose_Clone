@@ -30,10 +30,12 @@ fun HomeScreen() {
             Spacer(modifier = Modifier.height(10.dp))
             JobsMenu()
             Spacer(modifier = Modifier.height(30.dp))
-            JobRecommendation()
+            JobRecommendation("안드로이드 개발에서 많이 봤어요")
             Spacer(modifier = Modifier.height(30.dp))
             JobTheme()
             ThemeRecommendation()
+            JobRecommendation("주 4.5일 꿀근무 어때요?")
+            JobRecommendation("높은 연봉으로 보상 받아요")
         }
     }
 }
