@@ -20,5 +20,4 @@ fun RowTitle(title: String, menu: String = "") {
         Text(modifier = Modifier.weight(1f), text = title, fontSize = 17.sp)
         Text(text = menu)
     }
-    JobRow()
 }

@@ -29,8 +29,9 @@ import com.example.jobplanetuiclone.R
 import com.example.jobplanetuiclone.model.DummyJobInfo
 
 @Composable
-fun JobRecommendation() {
-    RowTitle("안드로이드 개발에서 많이 봤어요", "전체 보기 >")
+fun JobRecommendation(title: String) {
+    RowTitle(title = title, "전체 보기 >")
+    JobRow()
 }
 
 val dummyJobs = listOf(
@@ -50,7 +51,6 @@ fun JobRow() {
         items(dummyJobs, key = { it.company }) {
             JobItem(position = it.position, company = it.company, image = it.image)
         }
-
     }
 }
 
