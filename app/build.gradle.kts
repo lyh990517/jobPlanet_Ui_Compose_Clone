@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.jobplanetuiclone"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.jobplanetuiclone"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -68,4 +68,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     implementation("androidx.navigation:navigation-compose:2.6.0")
+    implementation ("com.google.accompanist:accompanist-pager:0.28.0")
 }
